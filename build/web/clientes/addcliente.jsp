@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Novo Cliente</title>
+        <title>Novo Cliente </title>
     </head>
     <body>
          <h2><a href="list.jsp">Usuários</a></h2>
@@ -28,7 +28,7 @@
             <input type="tel" name="telefone"/>
             Endreço:<br/>
             <input type="text" name="endereco">
-              <input type="submit" name="add" value="Adicionar"/>
+            <input type="submit" name="add" value="Adicionar"/>
         </form>
     </body>
 </html>
