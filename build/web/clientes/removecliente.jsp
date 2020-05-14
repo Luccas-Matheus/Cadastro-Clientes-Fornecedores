@@ -18,7 +18,7 @@
         cliente = DBCliente.getClientes().get(index);
         if(request.getParameter("remove")!= null){
             DBCliente.getClientes().remove(index);
-            response.sendRedirect("list.jsp");
+            response.sendRedirect("listcliente.jsp");
     }
     }catch(Exception ex){
         error = "Índice inválido";
