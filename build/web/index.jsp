@@ -8,10 +8,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <% String PageTitle = "Indice - Controle de Cadastro"; %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cliente e Fornecedor App</title>
+        <title><%= PageTitle %></title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div>
+          <%@include file="WEB-INF/jspf/header.jspf" %>
+          <%@include file="WEB-INF/jspf/footer.jspf" %>
+        </div>
+        <ol type="1">
+          <li><h2><a href="#" >Controle de Fornecedores</a></h2></li>
+          <li><h2><a href="#" >Controle de Clientes</a></h2></li>
+        </ol>
+        <br>
+        <hr size="3" style="background-color: black;border-color: black"/>
     </body>
 </html>
