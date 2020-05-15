@@ -13,7 +13,7 @@ package fatec.fornecedor;
 public class Fornecedor {
     
     public String razaoSocial, cnpj, email, telefone, endereco;
-     public void setAttributes(){
+     public void setAttributes(String razaoSocial, String cnpj, String email, String telefone, String endereco){
          this.setRazaoSocial(razaoSocial);
          this.setCnpj(cnpj);
          this.setEmail(email);
