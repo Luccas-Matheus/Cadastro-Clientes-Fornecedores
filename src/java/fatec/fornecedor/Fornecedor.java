@@ -11,6 +11,7 @@ package fatec.fornecedor;
  * modificado por carlos
  */
 public class Fornecedor {
+    
     public String razaoSocial, cnpj, email, telefone, endereco;
      public void setAttributes(){
          this.setRazaoSocial(razaoSocial);
