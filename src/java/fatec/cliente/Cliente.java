@@ -12,7 +12,6 @@ package fatec.cliente;
  */
 public class Cliente {
         public String nome, cpf, rg, email, telefone, endereco;
-        
         public void setAttributes(String nome, String cpf, String rg, String email, String telefone, String endereco){
             this.setNome(nome);
             this.setCpf(cpf);
