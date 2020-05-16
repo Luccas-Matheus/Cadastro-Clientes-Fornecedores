@@ -13,7 +13,7 @@
     </head>
     <body>
         <h2>Lista de Clientes</h2>
-        <h3><a href="addcliente.jsp">Cadastrar usuários</a></h3>
+        <h3><a href="addcliente.jsp">Cadastrar Usuários</a></h3>
         <table border="1">
             <tr>
                 <th>Nome</th>

@@ -26,7 +26,7 @@
             <input type="email" name="email"/><br/>
             Telefone:<br/>
             <input type="tel" name="telefone"/>
-            Endreço:<br/>
+            Endereço:<br/>
             <input type="text" name="endereco">
             <input type="submit" name="add" value="Adicionar"/>
         </form>
