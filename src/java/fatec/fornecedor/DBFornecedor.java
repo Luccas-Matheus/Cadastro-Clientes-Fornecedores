@@ -19,7 +19,7 @@ public class DBFornecedor {
             admin.setAttributes("express", "47.508.411/1020-72", "rota@express.com", "34713522", "rua oito um");
             fornecedors.add(admin);
             Fornecedor fornecedor = new Fornecedor();
-            admin.setAttributes("tradicional", "48.507.411/1020-73", "rota@tradicional.com", "31743522", "rua oito dois");
+            fornecedor.setAttributes("tradicional", "48.507.411/1020-73", "rota@tradicional.com", "31743522", "rua oito dois");
             fornecedors.add(fornecedor);       
         }
         
