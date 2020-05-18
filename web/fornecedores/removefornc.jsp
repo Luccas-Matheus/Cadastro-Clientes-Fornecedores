@@ -32,8 +32,8 @@
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
-        <h2><a href="listfornc.jsp">Fornecedores</a></h2>
-        <h3>Excluir <%=fornecedor.getRazaoSocial()%>?</h3>
+        <h3><a href="listfornc.jsp">Voltar a Lista de Fornecedores</a></h3>
+        <h2>Excluir <%=fornecedor.getRazaoSocial()%>?</h2>
 
         <%if (error != null) {%>
         <div style="color: red">

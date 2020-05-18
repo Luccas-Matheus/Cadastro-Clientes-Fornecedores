@@ -50,7 +50,7 @@
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
-        <h2><a href="listcliente.jsp">Clientes</a></h2>
+        <h3><a href="listcliente.jsp">Voltar a Lista de Clientes</a></h3>
         
         <%if (error != null) {%>
         <div style="color: red">
@@ -58,7 +58,7 @@
         </div>
         <%}%>
         
-        <h3>Alterar Cliente</h3>
+        <h2>Alterar Cliente</h2>
         <form method="post">
             Nome:<br/>
             <input type="text" name="nome" value="<%=cliente.getNome()%>"/><br/>

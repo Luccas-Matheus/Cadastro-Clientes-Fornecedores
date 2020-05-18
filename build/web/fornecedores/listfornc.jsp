@@ -16,6 +16,7 @@
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
+        <h3><a href="..//index.jsp"> Menu Principal </a></h3>
         <h2>Fornecedores</h2>
         <h3><a href="addfornc.jsp">Cadastrar Fornecedor</a></h3>
         <table border="1">
@@ -43,6 +44,5 @@
             </tr>
             <%}%>
         </table>           
-        <h2><a href="..//index.jsp"> Menu Principal </a></h2>
     </body>
 </html>

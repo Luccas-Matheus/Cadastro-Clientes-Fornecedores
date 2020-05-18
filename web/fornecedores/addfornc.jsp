@@ -37,8 +37,8 @@
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
-        <h2><a href="listfornc.jsp">Fornecedores</a></h2>
-        <h3>Cadastrar Fornecedor</h3>
+        <h4><a href="listfornc.jsp">Voltar a lista de Fornecedores</a></h4>
+        <h2>Cadastrar Fornecedor</h2>
         
         <%if (error != null) {%>
         <div style="color: red">
@@ -59,6 +59,7 @@
             <input type="text" name="endereco"/><br/>
             <br/><br/>
          <input type="submit" name="addfornc" value="Adicionar"/>
+         <input type="reset" name="cancel" value="Apagar Campos" />
          </form>
     </body>
 </html>

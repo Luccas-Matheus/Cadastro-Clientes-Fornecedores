@@ -40,8 +40,8 @@
     </head>
     <body>
          <%@include file="..//WEB-INF/jspf/header.jspf" %>
-         <h2><a href="listcliente.jsp">Clientes</a></h2>
-         <h3>Cadastrar Novo Cliente</h3>
+         <h3><a href="listcliente.jsp">Voltar a Lista de Clientes</a></h3>
+         <h2>Cadastrar Novo Cliente</h2>
          <%if (error != null) {%>
          <div style="color: red">
             <%= error%>
@@ -62,6 +62,7 @@
             <input type="text" name="endereco"/><br/>
              <br/><br/>
             <input type="submit" name="addcliente" value="Adicionar"/>
+            <input type="reset" name="cancel" value="Apagar Campos" />
         </form>
     </body>
 </html>

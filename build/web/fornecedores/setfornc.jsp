@@ -47,7 +47,7 @@
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
-        <h2><a href="listfornc.jsp">Fornecedores</a></h2>
+        <h3><a href="listfornc.jsp">Voltar a Lista de Fornecedores</a></h3>
         
         <%if (error != null) {%>
         <div style="color: red">
@@ -55,6 +55,7 @@
         </div>
         <%}%>
         
+        <h2>Alterar Fornecedor</h2>
         <form method="post">
             Razão Social:<br/>
             <input type="text" name="razaosocial" value="<%=fornecedor.getRazaoSocial()%>"/><br/>

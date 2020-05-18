@@ -31,8 +31,8 @@
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
-        <h2><a href="listcliente.jsp">Cliente</a></h2>
-        <h3>Excluir <%=cliente.getNome()%>?</h3>
+        <h3><a href="listcliente.jsp">Voltar a Lista de Clientes</a></h3>
+        <h2>Excluir <%=cliente.getNome()%>?</h2>
         
         <%if (error != null) {%>
         <div style="color: red">
