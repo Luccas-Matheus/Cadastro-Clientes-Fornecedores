@@ -19,7 +19,7 @@ public class DBCliente {
             admin.setAttributes("Carlos", "12312312332", "123213211", "cadu@gmail.com", "34253212", "rua araxa");
             clientes.add(admin);
             Cliente cliente = new Cliente();
-            admin.setAttributes("Eduardo", "42312312302", "023013011", "edu@gmail.com", "04500312", "rua dois");
+            cliente.setAttributes("Eduardo", "42312312302", "023013011", "edu@gmail.com", "04500312", "rua dois");
             clientes.add(cliente);       
         }
         

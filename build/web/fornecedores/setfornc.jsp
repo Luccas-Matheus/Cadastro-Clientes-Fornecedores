@@ -65,7 +65,7 @@
             Telefone:<br/>
             <input type="text" name="telefone" value="<%=fornecedor.getTelefone()%>"/><br/>
             Endereço:<br/>
-            <input type="text" name="endereco" value="<%=fornecedor.getEndereco()%>"<br/>
+            <input type="text" name="endereco" value="<%=fornecedor.getEndereco()%>"/><br/>
             <br/><br/>
         <input type="submit" name="setfornc" value="Alterar"/>
         </form>

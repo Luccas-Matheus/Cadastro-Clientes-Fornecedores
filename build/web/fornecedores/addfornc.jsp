@@ -56,8 +56,9 @@
             Telefone:<br/>
             <input type="text" name="telefone"/><br/>
             Endereço:<br/>
-            <input type="text" name="endereco"<br/>
+            <input type="text" name="endereco"/><br/>
             <br/><br/>
          <input type="submit" name="addfornc" value="Adicionar"/>
+         </form>
     </body>
 </html>

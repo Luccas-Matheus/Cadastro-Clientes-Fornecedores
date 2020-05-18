@@ -30,7 +30,38 @@
         <title>Remover</title>
     </head>
     <body>
+        <%@include file="..//WEB-INF/jspf/header.jspf" %>
         <h2><a href="listcliente.jsp">Usuários</a></h2>
-        <h3>Remover Usuário</h3>
+        <h3>Remover <%=cliente.getNome()%>?</h3>
+        
+        <%if (error != null) {%>
+        <div style="color: red">
+            <%= error%>
+        </div>
+        <%}%>
+        
+        <form method="post">
+            Nome:<br/>
+            <b>"<%=cliente.getNome()%>"</b>
+            <br/>
+            CPF:<br/>
+            <b>"<%=cliente.getCpf()%>"<b/>
+            <br/>
+            RG:<br/>
+            <b>"<%=cliente.getRg()%>"<b/>
+            <br/>
+            E-mail:<br/>
+            <b>"<%=cliente.getEmail()%>"</b>
+            <br/>
+            Telefone:<br/>
+            <b>"<%=cliente.getTelefone()%>"<b/>
+            <br/>
+            Endereço:<br/>
+            <b>"<%=cliente.getEndereco()%>"</b>             
+            <br/>
+            <br/>
+
+            <input type="submit" name="removecliente" value="Excluir"/> 
+        </form>       
     </body>
 </html>

@@ -19,7 +19,7 @@
         </div>
         <ol type="1">
           <li><h2><a href="fornecedores/listfornc.jsp" >Controle de Fornecedores</a></h2></li>
-          <li><h2><a href="#" >Controle de Clientes</a></h2></li>
+          <li><h2><a href="clientes/listcliente.jsp" >Controle de Clientes</a></h2></li>
         </ol>
         <br>
         <hr size="3" style="background-color: black;border-color: black"/>
