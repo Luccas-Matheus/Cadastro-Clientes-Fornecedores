@@ -16,7 +16,7 @@
     try{
         index = Integer.parseInt(request.getParameter("index"));
         cliente = DBCliente.getClientes().get(index);
-        if(request.getParameter("remove")!= null){
+        if(request.getParameter("removecliente")!= null){
             DBCliente.getClientes().remove(index);
             response.sendRedirect("listcliente.jsp");
     }
@@ -27,12 +27,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Remover</title>
+        <title>Remover Cliente</title>
     </head>
     <body>
         <%@include file="..//WEB-INF/jspf/header.jspf" %>
         <h2><a href="listcliente.jsp">Usuários</a></h2>
-        <h3>Remover <%=cliente.getNome()%>?</h3>
+        <h3>Excluir <%=cliente.getNome()%>?</h3>
         
         <%if (error != null) {%>
         <div style="color: red">
