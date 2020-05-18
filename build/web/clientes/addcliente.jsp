@@ -39,6 +39,7 @@
         <title>Novo Cliente </title>
     </head>
     <body>
+         <%@include file="..//WEB-INF/jspf/header.jspf" %>
          <h2><a href="listcliente.jsp">Clientes</a></h2>
          <h3>Cadastrar Novo Cliente</h3>
          <%if (error != null) {%>
