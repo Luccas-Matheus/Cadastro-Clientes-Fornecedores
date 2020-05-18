@@ -30,9 +30,9 @@
         else if (telefone.isEmpty()) error = "Telefone não pode ser nulo!";
         else if (endereco.isEmpty()) error = "Endereço não pode ser nulo!";
         else {
-                Cliente cliente = new Cliente();
-                cliente.setAttributes(nome, cpf, rg, email, telefone, endereco);
-                DBCliente.getClientes().add(cliente);
+                Cliente editCliente = new Cliente();
+                editCliente.setAttributes(nome, cpf, rg, email, telefone, endereco);
+                DBCliente.getClientes().set(index, editCliente);
                 response.sendRedirect("listcliente.jsp");
             }
         }
@@ -49,7 +49,15 @@
         <title>Alterar</title>
     </head>
     <body>
+        <%@include file="..//WEB-INF/jspf/header.jspf" %>
         <h2><a href="listcliente.jsp">Clientes</a></h2>
+        
+        <%if (error != null) {%>
+        <div style="color: red">
+            <%= error%>
+        </div>
+        <%}%>
+        
         <h3>Alterar Cliente</h3>
         <form method="post">
             Nome:<br/>
@@ -57,14 +65,15 @@
             CPF:<br/>
             <input type="text" name="cpf" value="<%=cliente.getCpf()%>"/><br/>
             RG:<br/>
-            <input type="text" name="rg" value="<%=cliente.getRg()%>"/>
+            <input type="text" name="rg" value="<%=cliente.getRg()%>"/><br/>
             E-mail:<br/>
             <input type="email" name="email" value="<%=cliente.getEmail()%>"/><br/>
             Telefone:<br/>
-            <input type="tel" name="telefone" value="<%=cliente.getTelefone()%>"/>
+            <input type="tel" name="telefone" value="<%=cliente.getTelefone()%>"/><br/>
             Endereço:<br/>
-            <input type="text" name="endereco" value="<%=cliente.getEndereco()%>"/>
-            <input type="submit" name="set" value="Alterar"/>
+            <input type="text" name="endereco" value="<%=cliente.getEndereco()%>"/><br/>
+            <br/><br/>
+            <input type="submit" name="setcliente" value="Alterar"/>
         </form>
     </body>
 </html>

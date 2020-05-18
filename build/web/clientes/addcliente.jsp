@@ -60,7 +60,7 @@
             Endereço:<br/>
             <input type="text" name="endereco"/><br/>
              <br/><br/>
-            <input type="submit" name="add" value="Adicionar"/>
+            <input type="submit" name="addcliente" value="Adicionar"/>
         </form>
     </body>
 </html>
